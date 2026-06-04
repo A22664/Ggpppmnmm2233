@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinematic 3D Chess - Modular</title>
+    <title>Cinematic 3D Chess - Playable</title>
     <link rel="stylesheet" href="style.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -12,7 +12,8 @@
         {
             "imports": {
                 "three": "https://unpkg.com/three@0.158.0/build/three.module.js",
-                "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/"
+                "three/addons/": "https://unpkg.com/three@0.158.0/examples/jsm/",
+                "chess.js": "https://cdn.jsdelivr.net/npm/chess.js@1.0.0-beta.6/+esm"
             }
         }
     </script>
@@ -21,11 +22,9 @@
     <div id="ui-container">
         <h1>Epic Chess</h1>
         <p id="game-status">White's Turn</p>
-        <button id="action-btn">Execute Cinematic Move</button>
     </div>
     <div id="game-container"></div>
 
     <script type="module" src="./main.js"></script>
 </body>
 </html>
-
